@@ -1,0 +1,7 @@
+9/17/2024
+- ConOps Report
+- Created basic charge pump that multiplies input AC voltage to a DC voltage 4x the magnitude
+  - Therefore, my current plan is to go 12VDC -> AC, then boost AC voltage using transformer, then use the above circuit to reach final DC voltage
+- This week, I will work on reports due next Wednesday as well as the midterm presentation next Monday
+  - This includes outlining a schedule for my subsystem and a block diagram
+- I will also begin the Subsystem Introduction, which will help me become acclimated to using Altium
