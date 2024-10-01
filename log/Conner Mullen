@@ -10,3 +10,9 @@
 - Midterm Presentation
 - FSR, ICD, Execution and Validation Plans
 - I will complete the Subsystem Intro Project this week and begin research on microcontrollers and sensing contact with the plant
+
+10/1/2024
+- Subsystem intro project will be completed tonight (had issue with my laptop that lasted thursday until today)
+- Looked into DC-AC conversion and PWM controllers
+- Found candidate GPIO extender chips that have I2C communication (PCAL6524 or similar with correct amount of IO pins)
+- Upcoming week: finish subsystem intro project, simulate DC-AC conversion
