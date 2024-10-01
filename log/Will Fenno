@@ -1,5 +1,12 @@
 09/17/2024
-
 This week I worked on gathering more data for soybean crop images and redroot pigweed images.
 I have started creating bounding boxes for labelling the data as either 0 - Crop or 1 - Weed.
 For the rest of the week, I plan on working on the upcoming documents like the FSR and the midterm presentation.
+
+09/24/2024
+This week I augmented my data and split my dataset into Training, Validation, and Testing folders.
+For the rest of the week I am finishing the FSR and ICD reports.
+
+10/01/2024
+This week I am starting to research and begin my model building.
+The rest of the week I plan to have a very rough draft of what I think my model;s architecture will be and how it operates.
