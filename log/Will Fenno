@@ -12,6 +12,31 @@ This week I am starting to research and begin my model building.
 The rest of this week I plan to complete my subsystem intro project.
 
 10/08/2024
-This weeek I completed my subsystem intro project.
+This week I completed my subsystem intro project.
 I also researched which keras application I will implement into the WIZARD model.
 I am beginning to build and tweak overfitting issues to train my model.
+
+10/15/2024
+This week I worked on the status update presentation and continued to build my machine learning model.
+I have reseached and finalized my subsystem component selection and plan to order parts this week.
+
+10/22/2024
+This week I continued to edit model hyperparameters as well as work on decreasing the regression losses during training.
+I plan to start building digital prediction code to test my model's performance on a test batch.
+
+10/29/2024
+This week I am still working on reducing losses for classificaiton and regression.
+I am also able to run predictions on a test batch from my dataset to see how my ML model behaves.
+
+11/05/2024
+This week I began making the code for real time detection that my model will implemented in.
+I plan to start preparing for the final presentation and work on my subsystem slides.
+
+11/12/2024
+This week I worked on the final presentation slides for my subsystem.
+I am currently still making the real time detection code and will begin testing this week.
+
+11/19/2024
+This week I began real time detection testing by printing pictures of both crops and weeds and testing the models predictions.
+I have also implemented code that saves any testing from the camera to a video file for viewing if needed.
+I plan to edit this detection code and prepare for final demo.
