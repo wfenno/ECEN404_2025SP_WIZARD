@@ -1,0 +1,7 @@
+Contains updates made from PCB layout/schematic to demo board
+
+1. Add peripheral H Bridge board
+  a. Cut trace from OSC to upper input of C-W generator
+  b. Cut trace from GND to lower input of C-W generator
+  c. Connect OSC, 12V, and GND to peripheral board inputs
+  d. Connect inputs to C-W generator to corresponding outputs of peripheral board
