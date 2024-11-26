@@ -5,3 +5,7 @@ Contains updates made from PCB layout/schematic to demo board
   b. Cut trace from GND to lower input of C-W generator
   c. Connect OSC, 12V, and GND to peripheral board inputs
   d. Connect inputs to C-W generator to corresponding outputs of peripheral board
+
+2. CURRENT_HIGH signal
+  a. Short R15
+  b. Change R17 to 10kOhm
