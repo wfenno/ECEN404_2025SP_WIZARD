@@ -16,3 +16,19 @@
 - Looked into DC-AC conversion and PWM controllers
 - Found candidate GPIO extender chips that have I2C communication (PCAL6524 or similar with correct amount of IO pins)
 - Upcoming week: finish subsystem intro project, simulate DC-AC conversion
+
+11/5/2024
+- PCB ordered, awaiting arrival
+- Develop I2C master using arduino to simulate control signals coming from microprocessor
+
+11/12/2024
+- PCB soldering
+
+11/19/2024
+- Mistake found in alternating voltage generator (0 to 12V instead of -12 to 12V), peripheral PCB ordered to fix issue
+- PCB validation started
+  - 12V-5V buck converter cannot pull 2A without pulling more than 1A from bench power supply (1.9A output works fine)
+  - I2C works properly
+  - High current sensor works properly
+  - Cockroft-Walton Generator works properly under no load, will continue to test under various loads in MOhm range
+
