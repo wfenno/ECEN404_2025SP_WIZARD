@@ -1,0 +1,3 @@
+Changes to H Bridge Oscillator PCB
+
+1. Remove R4 (needed for simulations to run properly, but not necessary for real life circuit)
