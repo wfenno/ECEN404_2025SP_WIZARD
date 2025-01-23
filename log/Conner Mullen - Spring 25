@@ -1,0 +1,9 @@
+1/16/25 (Project Intro)
+The high voltage subsystem takes 12VDC (car battery) and boosts the voltage up to ~80V to deliver to the “weed.” It is controlled by I2C signals from the Jetson so it is only charged when it is supposed to be. I also added a module that can monitor whether current through the “weed” meets a certain threshold. There is also a buck converter that delivers 5V at over 2A to power the Jetson. In 403, I was able to get the I2C working as intended using an Arduino to send the test signals. The high voltage worked properly as well, although I did have to make quite a few changes to the PCB. The 5V power supply is capable of sourcing 2A, although the voltage has more ripple than it should. 
+This week, I will be modifying my schematics and PCB layout to reflect the changes I made during 403. Throughout the rest of the semester, I will be assisting with the implementation of I2C on the Jetson and designing a casing for my PCB and the Jetson. I will also be experimenting with the component values for the 5V power supply to try and smooth out the output.
+
+
+1/23/25
+- Update schematics to reflect fixes from 403
+- Update PCB layout, routing in progress
+- Will order PCB and parts tomorrow
