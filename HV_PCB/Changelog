@@ -7,5 +7,5 @@ Contains updates made from PCB layout/schematic to demo board
   d. Connect inputs to C-W generator to corresponding outputs of peripheral board
 
 2. CURRENT_HIGH signal
-  a. Short R15
-  b. Change R17 to 10kOhm
+  a. Short R15 --> now R22
+  b. Change R17 to 10kOhm --> now R24
