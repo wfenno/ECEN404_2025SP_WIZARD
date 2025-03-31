@@ -1,0 +1,72 @@
+1/16 Update:
+My subsystem consists of building a machine learning model that can accurately detect and classify weeds and crops in a farm field. 
+The specific crop is soybean and the weed is redroot pigweed, both growing in Texas and Germany. I created an augmented dataset along with bounding box annotation .json files. 
+I decided to go with a VGG16 architecture for the model, implementing a classification head and a regression head for dual model output. 
+The model was trained and tested on both digital predictions and real-time predictions using a webcam. 
+All of this was done on my laptop, and the code/files will need to be transferred to the processing unit of my subsystem for integration later (Jetson Nano).
+
+Earlier this week I placed my code and model file on Github, and cloned the repo on the Jetson to complete the transfer. 
+This week I plan to set up the Nvidia Jetson Nano by installing the software and packages needed to run the machine learning model code I previously created. 
+I will make sure that the code runs correctly so that integration will be smooth.
+
+1/23 Update:
+This past week I set up the virtual environment and organized all files and folders within a main ‘WIZARD’ folder on the jetson. 
+I also set up the camera and jetson with GStreamer support so that OpenCV is able to detect and view the live camera feed when testing.
+
+This week I plan on testing the real time detection code using the ML model and the camera that is now installed correctly. 
+Hopefully the model runs smoothly, but if not I will look into any performance issues and try to fix them.
+
+1/30 Update: 
+Last week I got the camera to work smoothly with OpenCV, and I was able to test the code that runs both the machine learning model and the camera, but since I am using Tensorflow-CPU, the performance is really bad. 
+I had a setback earlier this week and was unable to log into the Jetson for 2 days, but that got resolved. So this week and next, I am trying to figure out how to utilize the GPU so that performance is better. 
+There are a lot of compatibility issues with Tensorflow/CUDA/Python versions so I need to find the right configuration.
+
+2/6 Update
+Past Week:
+- Tested and verified functionality of code.
+- Determining how to get the Jetson’s GPU recognized and utilized by Tensorflow.
+This Week:
+- Still in the works on getting the Jetson’s GPU to be accessed by a specific version of a Tensorflow wheel package.
+
+2/13 Update
+Past Week:
+- Figured out a solution to use the CPU with parallel threading so that the code can run at a decent frame rate (slower than GPU, but still functional).
+- Added code to output center coordinates of a detected weed after a certain amount of time with high confidence in weed classification.
+This Week:
+- Working on adding a BIT (Built in Test) that turns on a red LED when there is camera failure or a OpenCV error.
+
+2/20 Update
+Past Week:
+- Completed Built-In Test (BIT)
+- Created a main() function that will reset the system startup process if a BIT is triggered.
+This Week:
+- Incorporate code that will signal the high voltage pcb through I2C whenever a weed is confidently detected.
+
+2/27 Update
+Past Week:
+- Finally configured the GPU on the Jeston Nano with the correct version of Tensorflow (2.4.1).
+- Implemented high voltage functions with real time detection code.
+This Week:
+- Having issue loading in the machine learning model (built on TF 2.10.1) onto TF 2.4.1 to run the code on GPU. 
+Will be finding a way to convert the model file so TF 2.4.1 accepts it without loading issues.
+
+3/6 Update
+Past Week:
+- Implemented high voltage functions with real time detection code.
+- Edited my code so that the zapping functions are executed whenever a weed is confidently detected for a set amount of time
+This Week:
+- Converting WIZARD code to standalone terminal-controlled service rather than running the code from a JupyterLab cell so that it is easier for user experience.
+
+3/20 Update
+Past Week: 
+- Converted WIZARD code to standalone terminal controlled service on a single line.
+This Week:
+- Documentation and more testing.
+- Revising some parts of the WIZARD code
+
+3/27 Update
+Past Week: 
+- Validation, minor adjustments to WIZARD code.
+This Week:
+- Documentation.
+- Revising some parts of the WIZARD code
