@@ -1,0 +1,4 @@
+1. Fix power
+  Cut trace connecting lower left pin of buck converter IC to 5V output
+  Add 39Ohm resistor between lower left (feedback) pin of IC to 5V output
+  Add 1kOhm resistor between lower left pin of IC to GND
