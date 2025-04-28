@@ -4,6 +4,105 @@ This week, I will be modifying my schematics and PCB layout to reflect the chang
 
 
 1/23/25
-- Update schematics to reflect fixes from 403
-- Update PCB layout, routing in progress
-- Will order PCB and parts tomorrow
+Past Week:
+- Updated Schematics
+- PCB Layout/Routing is in progress
+- Ordering PCB tomorrow
+
+This Week:
+- Redo calculations for 5V:2A power supply and choose components to test
+- Inventory parts and order what I need
+
+
+1/30
+Past Week:
+- Ordered PCB and parts (including test components for DC-DC converter)
+- Met with German team about modifying hardware to reach ~1kV; they are in their exam cycle so progress on that will be slow until they are done with exams
+
+This Week:
+- Assemble PCB, verify functionality
+
+
+2/6
+Past Week:
+- PCB still hasn’t arrived
+- Testing on variations of 5V:2A power supply
+
+This Week:
+- Jetson I2C Functions
+- Assemble PCB whenever it decides to arrive
+
+
+2/13
+Past Week:
+- Verify Jetson I2C Functionality
+- Task-specific I2C functions
+
+This Week:
+- PCB arrived today (Thursday 2/13), will be assembling this week
+
+
+2/20
+Past Week:
+- Assembled, re-validated PCB
+
+This Week:
+- Jetson-to-PCB I2C testing and debugging
+
+
+2/27
+Past Week:
+- Adjusted DC-DC converter to supply 5.2V rather than 5V to fix under-voltage issue when powering Jetson (added voltage divider between output and feedback)
+
+This Week:
+- Add level shifter in between I2C interface (Jetson uses 3.3V, my PCB uses 5V) and begin testing
+- Begin 3D model of electronics casing
+
+
+3/6
+Past Week:
+- Implemented level shifter for I2C, ran full test of weed detection -> zap delivered
+- Learned SolidWorks to prepare to make casing
+
+This Week:
+- 3D model and print casing
+
+
+3/20
+Past Week:
+- Learned SolidWorks, started modeling casing
+
+This Week:
+- Finish modeling casing and print
+- Documentation
+
+
+3/27
+Past Week:
+- Casing is printing
+
+This Week:
+- Documentation
+
+
+4/3
+Past Week:
+- Printed casing v1
+- Documentation
+
+This Week:
+- Revise casing, prepare presentations
+- Documentation
+
+
+4/10
+Past Week:
+- Ran through demo
+- Final presentation
+
+This Week:
+- Prepare for showcase
+
+
+4/18
+High voltage subsystem is fully complete and functional. It produces the desired 88V impulse, can be controlled by the computer vision subsystem, and successfully supplies power to the Jetson.
